@@ -46,23 +46,23 @@
       <!-- 版权信息和 ICP 备案 -->
       <div class="mt-6 text-center text-gray-400 text-sm space-y-2">
         <p>
-          &copy; {{ currentYear }} Hunter. All rights reserved. |
+          &copy; {{ currentYear }} Hunter. 保留所有权利 |
           <a
             href="https://github.com/xiaoook/hunter-personal-website"
             target="_blank"
             rel="noopener noreferrer"
             class="hover:text-white transition-colors ml-1"
           >
-            Open Source
+            开源项目
           </a>
-          <span class="mx-1">under</span>
+          <span class="mx-1">采用</span>
           <a
             href="https://github.com/xiaoook/hunter-personal-website/blob/main/LICENSE"
             target="_blank"
             rel="noopener noreferrer"
             class="hover:text-white transition-colors"
           >
-            MIT License
+            MIT 许可证
           </a>
         </p>
         <p v-if="icpNumber">
