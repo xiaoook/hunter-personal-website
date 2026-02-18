@@ -15,7 +15,7 @@
       </div>
 
       <!-- 社交媒体图标 -->
-      <div class="mt-6 flex justify-center gap-6">
+      <div class="mt-6 flex justify-center md:justify-start gap-6">
         <a
           v-if="githubUrl"
           :href="githubUrl"
@@ -44,10 +44,6 @@
             />
           </svg>
         </a>
-      </div>
-
-      <div class="mt-6 text-center text-gray-500 text-sm">
-        <p>Built with ❤️ using Vue 3 & Tailwind CSS</p>
       </div>
     </div>
   </footer>
