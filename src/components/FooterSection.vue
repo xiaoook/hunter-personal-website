@@ -44,7 +44,26 @@
 
       <!-- 版权信息和 ICP 备案 -->
       <div class="mt-6 text-center text-gray-400 text-sm space-y-2">
-        <p>&copy; {{ currentYear }} Hunter. All rights reserved.</p>
+        <p>
+          &copy; {{ currentYear }} Hunter. All rights reserved. |
+          <a
+            href="https://github.com/xiaoook/hunter-personal-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors ml-1"
+          >
+            Open Source
+          </a>
+          <span class="mx-1">under</span>
+          <a
+            href="https://github.com/xiaoook/hunter-personal-website/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors"
+          >
+            MIT License
+          </a>
+        </p>
         <p v-if="icpNumber">
           <a
             href="https://beian.miit.gov.cn/"
