@@ -42,6 +42,9 @@ VITE_FEATURED_REPOS=my-repo,my-org/org-repo,another-user/public-repo
 VITE_GITHUB_URL=https://github.com/your-username
 VITE_LINKEDIN_URL=https://linkedin.com/in/your-profile
 
+# ICP 备案号（选填，仅中国大陆网站需要）
+VITE_ICP_NUMBER=京ICP备12345678号-1
+
 # Formspree 表单 ID
 VITE_FORMSPREE_ID=your-formspree-id
 ```
@@ -118,6 +121,9 @@ src/
   - 可以混合使用，例如：`my-repo,my-org/team-project,friend/cool-repo`
 - **`VITE_GITHUB_URL`**: 你的 GitHub 主页链接（选填，用于页脚社交媒体图标）
 - **`VITE_LINKEDIN_URL`**: 你的 LinkedIn 主页链接（选填，用于页脚社交媒体图标）
+- **`VITE_ICP_NUMBER`**: ICP 备案号（选填，仅中国大陆网站需要）
+  - 格式示例：`京ICP备12345678号-1`
+  - 将显示在页脚，点击可跳转至工信部备案网站
 - **`VITE_FORMSPREE_ID`**: Formspree 表单 ID（选填，用于联系表单）
   - 访问 [Formspree.io](https://formspree.io/) 注册并创建表单
   - 获取表单 ID（格式如：`xxxYYYzzz`）
