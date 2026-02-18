@@ -41,6 +41,9 @@ VITE_FEATURED_REPOS=my-repo,my-org/org-repo,another-user/public-repo
 # 社交媒体链接
 VITE_GITHUB_URL=https://github.com/your-username
 VITE_LINKEDIN_URL=https://linkedin.com/in/your-profile
+
+# Formspree 表单 ID
+VITE_FORMSPREE_ID=your-formspree-id
 ```
 
 **配置说明：**
@@ -115,6 +118,10 @@ src/
   - 可以混合使用，例如：`my-repo,my-org/team-project,friend/cool-repo`
 - **`VITE_GITHUB_URL`**: 你的 GitHub 主页链接（选填，用于页脚社交媒体图标）
 - **`VITE_LINKEDIN_URL`**: 你的 LinkedIn 主页链接（选填，用于页脚社交媒体图标）
+- **`VITE_FORMSPREE_ID`**: Formspree 表单 ID（选填，用于联系表单）
+  - 访问 [Formspree.io](https://formspree.io/) 注册并创建表单
+  - 获取表单 ID（格式如：`xxxYYYzzz`）
+  - 配置后联系表单将直接发送到你的邮箱
 
 **重要提示**: 
 - `.env` 文件已被添加到 `.gitignore`，不会被提交到版本控制
