@@ -2,6 +2,14 @@
 
 个人网站项目 - 使用 Vue 3、TypeScript 和 Tailwind CSS 构建
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Vue](https://img.shields.io/badge/Vue-3.5-brightgreen.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
+![Vite](https://img.shields.io/badge/Vite-7.x-646CFF.svg)
+![Node](https://img.shields.io/badge/Node-%3E%3D20.19-339933.svg)
+
+🌍 **简体中文** | [English](README_EN.md)
+
 ## 功能特点
 
 - 📱 响应式设计，支持移动端和桌面端
@@ -136,5 +144,5 @@ src/
 
 ## License
 
-MIT
+此项目使用 MIT 许可证开源
 
