@@ -2,7 +2,14 @@
   <section id="projects" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold text-center mb-4 text-gray-900">项目作品</h2>
-      <p class="text-center text-gray-600 mb-12">这里是我的一些代表性项目</p>
+      <p class="text-center text-gray-600 mb-12">
+        访问我的 <a
+          :href="githubUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-600 hover:text-blue-600 font-medium underline"
+        >GitHub</a> 查看更多项目
+      </p>
       <!-- 加载状态 -->
       <div v-if="loading" class="text-center py-12">
         <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -140,6 +147,7 @@ const GITHUB_USERNAME = import.meta.env.VITE_GITHUB_USERNAME || ''
 const FEATURED_REPOS = import.meta.env.VITE_FEATURED_REPOS
   ? import.meta.env.VITE_FEATURED_REPOS.split(',').map((repo: string) => repo.trim()).filter(Boolean)
   : []
+const githubUrl = import.meta.env.VITE_GITHUB_URL || `https://github.com/${GITHUB_USERNAME}`
 
 const projects = ref<GitHubRepo[]>([])
 const loading = ref(false)
