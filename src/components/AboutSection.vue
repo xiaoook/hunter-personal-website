@@ -59,7 +59,7 @@
 <script setup lang="ts">
 const education = [
   {
-    degree: '计算机科学 学士',
+    degree: '计算机科学理学学士',
     school: '宁波诺丁汉大学',
     period: '2023 - 2027',
     gpa: '3.8/4.0',
