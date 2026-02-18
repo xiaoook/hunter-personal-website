@@ -38,6 +38,7 @@
           <a href="#hero" class="text-gray-400 hover:text-white transition-colors">首页</a>
           <a href="#about" class="text-gray-400 hover:text-white transition-colors">关于</a>
           <a href="#projects" class="text-gray-400 hover:text-white transition-colors">项目</a>
+          <a href="#skills" class="text-gray-400 hover:text-white transition-colors">技能</a>
           <a href="#contact" class="text-gray-400 hover:text-white transition-colors">联系</a>
         </div>
       </div>
