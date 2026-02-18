@@ -16,10 +16,16 @@
 
           <div class="pt-4">
             <h3 class="text-xl font-semibold mb-4 text-gray-900">教育背景</h3>
-            <div class="bg-gray-50 p-4 rounded-lg">
-              <p class="font-semibold text-gray-900">计算机科学与技术 学士</p>
-              <p class="text-gray-600">XX大学 | 2022 - 2026</p>
-              <p class="text-gray-600 mt-2">GPA: 3.8/4.0</p>
+            <div class="space-y-3">
+              <div
+                v-for="edu in education"
+                :key="edu.school"
+                class="bg-gray-50 p-4 rounded-lg"
+              >
+                <p class="font-semibold text-gray-900">{{ edu.degree }}</p>
+                <p class="text-gray-600">{{ edu.school }} | {{ edu.period }}</p>
+                <p v-if="edu.gpa" class="text-gray-600 mt-2">GPA: {{ edu.gpa }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -51,11 +57,27 @@
 </template>
 
 <script setup lang="ts">
+const education = [
+  {
+    degree: '计算机科学 学士',
+    school: '宁波诺丁汉大学',
+    period: '2023 - 2027',
+    gpa: '3.8/4.0',
+  },
+  // 可以在这里添加更多教育经历
+  // {
+  //   degree: '硕士学位',
+  //   school: '学校名称',
+  //   period: '年份',
+  //   gpa: '可选',
+  // },
+]
+
 const interests = [
   '全栈 Web 开发',
   '算法设计与优化',
   '开源项目贡献',
   '机器学习基础',
-  '物联网与智能家居'
+  '物联网与智能家居',
 ]
 </script>
