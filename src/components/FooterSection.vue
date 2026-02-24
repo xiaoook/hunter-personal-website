@@ -65,14 +65,25 @@
             MIT 许可证
           </a>
         </p>
-        <p v-if="icpNumber">
+        <p v-if="icpNumber || psbNumber" class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
           <a
+            v-if="icpNumber"
             href="https://beian.miit.gov.cn/"
             target="_blank"
             rel="noopener noreferrer"
             class="hover:text-white transition-colors"
           >
             {{ icpNumber }}
+          </a>
+          <a
+            v-if="psbNumber"
+            :href="`https://beian.mps.gov.cn/#/query/webSearch?code=${psbCode}`"
+            target="_blank"
+            rel="noreferrer"
+            class="flex items-center gap-1 hover:text-white transition-colors"
+          >
+            <img src="/备案图标.png" alt="公安备案图标" class="w-4 h-4 inline-block" />
+            {{ psbNumber }}
           </a>
         </p>
       </div>
@@ -89,4 +100,7 @@ const currentYear = computed(() => new Date().getFullYear())
 const githubUrl = import.meta.env.VITE_GITHUB_URL || ''
 const linkedinUrl = import.meta.env.VITE_LINKEDIN_URL || ''
 const icpNumber = import.meta.env.VITE_ICP_NUMBER || ''
+const psbNumber = import.meta.env.VITE_PSB_NUMBER || ''
+// 提取备案号中的数字部分用于链接 code 参数
+const psbCode = psbNumber.replace(/\D/g, '')
 </script>

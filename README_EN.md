@@ -53,6 +53,9 @@ VITE_LINKEDIN_URL=https://linkedin.com/in/your-profile
 # ICP Filing Number (optional, required only for websites in mainland China)
 VITE_ICP_NUMBER=京ICP备12345678号-1
 
+# Public Security Network Filing Number (optional, required only for websites in mainland China)
+VITE_PSB_NUMBER=浙公网安备33021212345678号
+
 # Formspree Form ID
 VITE_FORMSPREE_ID=your-formspree-id
 ```
@@ -132,6 +135,10 @@ All environment variables must be prefixed with `VITE_` to be accessible in clie
 - **`VITE_ICP_NUMBER`**: ICP filing number (optional, required only for websites in mainland China)
   - Example format: `京ICP备12345678号-1`
   - Will be displayed in footer with a link to the MIIT filing website
+- **`VITE_PSB_NUMBER`**: Public Security Network filing number (optional, required only for websites in mainland China)
+  - Example format: `浙公网安备33021212345678号`
+  - Place the filing icon at `public/备案图标.png`
+  - Will be displayed in the footer to the right of the ICP number, with an icon, linking to the MPS filing website
 - **`VITE_FORMSPREE_ID`**: Formspree form ID (optional, used for contact form)
   - Visit [Formspree.io](https://formspree.io/) to register and create a form
   - Get your form ID (format: `xxxYYYzzz`)
