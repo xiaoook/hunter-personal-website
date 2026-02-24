@@ -53,6 +53,9 @@ VITE_LINKEDIN_URL=https://linkedin.com/in/your-profile
 # ICP 备案号（选填，仅中国大陆网站需要）
 VITE_ICP_NUMBER=京ICP备12345678号-1
 
+# 公安联网备案号（选填，仅中国大陆网站需要）
+VITE_PSB_NUMBER=浙公网安备33021212345678号
+
 # Formspree 表单 ID
 VITE_FORMSPREE_ID=your-formspree-id
 ```
@@ -132,6 +135,10 @@ src/
 - **`VITE_ICP_NUMBER`**: ICP 备案号（选填，仅中国大陆网站需要）
   - 格式示例：`京ICP备12345678号-1`
   - 将显示在页脚，点击可跳转至工信部备案网站
+- **`VITE_PSB_NUMBER`**: 公安联网备案号（选填，仅中国大陆网站需要）
+  - 格式示例：`浙公网安备33021212345678号`
+  - 备案图标请放置于 `public/备案图标.png`
+  - 将显示在页脚 ICP 备案号右侧，带图标，点击可跳转至公安部备案网站
 - **`VITE_FORMSPREE_ID`**: Formspree 表单 ID（选填，用于联系表单）
   - 访问 [Formspree.io](https://formspree.io/) 注册并创建表单
   - 获取表单 ID（格式如：`xxxYYYzzz`）
